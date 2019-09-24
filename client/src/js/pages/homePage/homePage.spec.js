@@ -21,7 +21,7 @@ describe('HomePage', () => {
   describe('#render', () => {
     it('should render my page correctly', () => {
       const page = new HomePage();
-      expect(page.render()).toContain("<div>Hello, World!</div>");
+      expect(page.render()).toContain("<div>Product</div>");
     });
   });
 
@@ -33,7 +33,19 @@ describe('HomePage', () => {
       expect(AudioHub.playSound).toBeCalledWith('./sounds/plop.mp3');
     });
   });
+  describe('#faceButtonEvent', () => {
+    it('should take the user to the demo page', () => {
+      const props = {
+        navigate: () => { },
+      };
 
+      const page = new HomePage(props);
+      spyOn(page, 'navigate');
+
+      page.faceButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('demo');
+    });
+  });
   describe('#rightButtonEvent', () => {
     it('goes to contacts page', () => {
       const page = new HomePage();
