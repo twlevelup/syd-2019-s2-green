@@ -21,7 +21,7 @@ describe('HomePage', () => {
   describe('#render', () => {
     it('should render my page correctly', () => {
       const page = new HomePage();
-      expect(page.render()).toContain("<div>Product</div>");
+      expect(page.render()).toContain("Product");
     });
   });
 
@@ -69,24 +69,12 @@ describe('HomePage', () => {
   });
 
   describe('#topButtonEvent', () => {
-    it('scrolls page up', () => {
-      const page = new HomePage({ watchFace });
+    it('goes to size selection', () => {
+      const page = new HomePage();
+      spyOn(page, 'navigate');
 
       page.topButtonEvent();
-
-      expect(watchFace.scrollTop).toEqual(-40);
-    });
-  });
-
-  describe('#updateTimeDisplay', () => {
-    it('updateTimeDisplays calls clock-time if its in the window', () => {
-      const page = new HomePage();
-
-      watchFace.innerHTML = page.render();
-
-      jest.spyOn(page,"getDateTime");
-      page.updateTimeDisplay(page.getDateTime);
-      expect(page.getDateTime).toHaveBeenCalledTimes(1);
+      expect(page.navigate).toHaveBeenCalledWith('medium');
     });
   });
 
@@ -113,4 +101,5 @@ describe('HomePage', () => {
       expect(page.updateTimeDisplay).toHaveBeenCalledTimes(3);
     });
   });
+  
 });
