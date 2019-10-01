@@ -11,7 +11,7 @@ describe('MediumPage', () => {
   describe('#render', () => {
     it('should render the size selection page menu', () => {
       const page = new MediumPage();
-      expect(page.render()).toContain("Medium");
+      expect(page.render()).toContain("MEDIUM");
     });
   });
 
