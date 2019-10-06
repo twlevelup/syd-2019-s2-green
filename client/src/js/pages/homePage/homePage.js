@@ -41,24 +41,20 @@ class HomePage extends BasePage {
     }
   }
 
-  faceButtonEvent() {
-    this.navigate('demo');
-  }
-
   rightButtonEvent() {
-    this.navigate('contacts');
+    this.navigate('product');
   }
 
   leftButtonEvent() {
-    AudioHub.playSound(plop);
+    this.navigate('404');
   }
 
   topButtonEvent() {
-    this.watchFace.scrollTop -= 40;
+    this.navigate('team');
   }
 
   bottomButtonEvent() {
-    this.watchFace.scrollTop += 40;
+    this.navigate('product-view');
   }
 }
 

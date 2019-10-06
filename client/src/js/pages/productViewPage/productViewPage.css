@@ -1,0 +1,29 @@
+#watch-face {
+}
+
+.main-picture {
+  height: 60px;
+  transform: translate(0px, -50px);
+}
+
+.shopping-cart-picture {
+  transform: translate(180px, -40px);
+  height: 0px;
+}
+
+.item-info {
+  font-weight: bold;
+}
+
+.item-name {
+  float: left;
+}
+
+.item-cost {
+  float: right;
+  padding-right: 35px;
+}
+
+hr {
+  width:210px;
+}
