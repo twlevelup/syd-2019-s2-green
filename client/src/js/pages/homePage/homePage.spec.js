@@ -65,28 +65,4 @@ describe('HomePage', () => {
     });
   });
 
-  describe('#updateTimeDisplay', () => {
-    it('updateTimeDisplays does not call clock-time if its not in the window', () => {
-      const page = new HomePage();
-
-      jest.spyOn(page,"getDateTime");
-      page.updateTimeDisplay(page.getDateTime);
-      expect(page.getDateTime).toHaveBeenCalledTimes(0);
-    });
-  });
-
-  describe('#updateTimeEverySecond', () => {
-    it('update time display gets called three times in 3000 ms', () => {
-      const page = new HomePage();
-
-      spyOn(page, 'updateTimeDisplay');
-
-      const page = new HomePage(props);
-      spyOn(page, 'navigate');
-
-      page.topButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('team');
-    });
-  });
-
 });
