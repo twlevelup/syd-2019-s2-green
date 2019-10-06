@@ -50,7 +50,7 @@ class HomePage extends BasePage {
   }
 
   topButtonEvent() {
-    this.navigate('team');
+    this.navigate('medium');
   }
 
   bottomButtonEvent() {
