@@ -11,11 +11,11 @@
 }
 
 .buttonTop{
-  transform: translate(95px,-5px);
+  transform: translate(80px,-5px);
 }
 
 .buttonBottom{
-  transform: translate(85px,208px);
+  transform: translate(85px,225px);
 }
 
 .buttonLeft{
@@ -27,5 +27,5 @@
 }
 
 .frontPagePicture {
-  transform: translate(10px, 10px);
+  transform: translate(10px, 20px);
 }

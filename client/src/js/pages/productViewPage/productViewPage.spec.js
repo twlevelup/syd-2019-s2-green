@@ -25,7 +25,7 @@ describe('ProductViewPage', () => {
       spyOn(page, 'navigate');
 
       page.faceButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('product-info');
+      expect(page.navigate).toHaveBeenCalledWith('product-info-medium-one');
     });
   })
 });

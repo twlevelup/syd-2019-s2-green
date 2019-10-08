@@ -1,4 +1,4 @@
-const ProductInfoPage = require('./productInfoPage');
+const ProductInfoPage = require('./productInfoPageMediumOne');
 const StorageHub = require('watch-framework').StorageHub;
 const AudioHub = require('watch-framework').AudioHub;
 

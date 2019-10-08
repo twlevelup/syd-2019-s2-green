@@ -3,16 +3,17 @@
 
 .main-picture {
   height: 60px;
-  transform: translate(0px, -50px);
+  transform: translate(0px, -10px);
 }
 
 .shopping-cart-picture {
-  transform: translate(180px, -40px);
+  transform: translate(180px, -0px);
   height: 0px;
 }
 
 .item-info {
   font-weight: bold;
+  transform: translate(0px, 40px);
 }
 
 .item-name {

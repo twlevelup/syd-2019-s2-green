@@ -1,7 +1,7 @@
 const BasePage = require('watch-framework').BasePage;
 
 class ProductInfoPage extends BasePage {
-  template = require('./productInfoPage.hbs');
+  template = require('./productInfoPageMediumOne.hbs');
 
   bottomButtonEvent() {
     this.navigate("/");

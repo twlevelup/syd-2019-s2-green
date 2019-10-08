@@ -14,25 +14,29 @@
 
 .productInfoInfo {
   color: green;
+  overflow-wrap: break-word;
 }
 
 .recycleInfo {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   background-color: lightgreen;
   border-radius: 5px;
   padding-left: 4px;
+  padding-right: 1px;
 }
 
 .greenhouseInfo {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     background-color: lightgreen;
     border-radius: 5px;
     padding-left: 4px;
+    padding-right: 1px;
 }
 
 .leafInfo {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   background-color: lightgreen;
   border-radius: 5px;
   padding-left: 4px;
+  padding-right: 1px;
 }

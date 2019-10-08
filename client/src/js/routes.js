@@ -6,7 +6,7 @@ const ProductViewPage = require ('./pages/productViewPage/productViewPage')
 const medium = require("./pages/productPage/medium");
 // const mediumProducts = require("./pages/Product/")
 const Demo = require('./pages/demoPage/demoPage');
-const ProductInfoPage = require('./pages/productInfoPage/productInfoPage');
+const ProductInfoPage = require('./pages/productInfoPage/mediumProductInfo/mediumPlaceHolderOne/productInfoPageMediumOne');
 
 module.exports = {
   '/': HomePage,
@@ -17,5 +17,5 @@ module.exports = {
   "medium": medium,
   // "medium_products": mediumProducts,
   'demo': Demo,
-  'product-info': ProductInfoPage,
+  'product-info-medium-one': ProductInfoPage,
 };

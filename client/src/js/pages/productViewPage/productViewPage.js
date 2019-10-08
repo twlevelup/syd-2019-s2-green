@@ -22,7 +22,7 @@ class ProductViewPage extends BasePage {
   }
 
   faceButtonEvent() {
-    this.navigate('product-info');
+    this.navigate('product-info-medium-one');
   }
 }
 
