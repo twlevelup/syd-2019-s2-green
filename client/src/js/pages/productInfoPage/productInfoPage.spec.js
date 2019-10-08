@@ -1,8 +1,8 @@
-const ProductViewPage = require('./productViewPage');
+const ProductInfoPage = require('./productInfoPage');
 const StorageHub = require('watch-framework').StorageHub;
 const AudioHub = require('watch-framework').AudioHub;
 
-describe('ProductViewPage', () => {
+describe('ProductInfoPage', () => {
   let watchFace;
   beforeEach(() => {
     document.body.innerHTML = `<div id='watch-face' style='height: 100px; width: 100px;'></div>`;
@@ -11,21 +11,11 @@ describe('ProductViewPage', () => {
 
   describe('#bottomButtonEvent', () => {
     it ('returns to homepage', () => {
-      const page = new ProductViewPage();
+      const page = new ProductInfoPage();
       spyOn(page, 'navigate');
 
       page.bottomButtonEvent();
       expect(page.navigate).toHaveBeenCalledWith('/');
-    });
-  })
-
-    describe('#faceButtonEvent', () => {
-    it ('goes to productInfoPage', () => {
-      const page = new ProductViewPage();
-      spyOn(page, 'navigate');
-
-      page.faceButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('product-info');
     });
   })
 });

@@ -6,6 +6,7 @@ const ProductViewPage = require ('./pages/productViewPage/productViewPage')
 const medium = require("./pages/productPage/medium");
 // const mediumProducts = require("./pages/Product/")
 const Demo = require('./pages/demoPage/demoPage');
+const ProductInfoPage = require('./pages/productInfoPage/productInfoPage');
 
 module.exports = {
   '/': HomePage,
@@ -14,6 +15,7 @@ module.exports = {
   '404': FourOhFour,
   'product-view': ProductViewPage,
   "medium": medium,
-  // "medium_products": mediumProducts
+  // "medium_products": mediumProducts,
   'demo': Demo,
+  'product-info': ProductInfoPage,
 };

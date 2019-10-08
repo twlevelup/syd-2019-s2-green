@@ -1,0 +1,38 @@
+.productInfo {
+  transform: translate(0px, -50px);
+  width: 212px;
+}
+
+.productInfoTitle {
+  background-color: green;
+  padding-left: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius:5px;
+  margin-bottom: 5px;
+}
+
+.productInfoInfo {
+  color: green;
+}
+
+.recycleInfo {
+  margin-bottom: 5px;
+  background-color: lightgreen;
+  border-radius: 5px;
+  padding-left: 4px;
+}
+
+.greenhouseInfo {
+    margin-bottom: 15px;
+    background-color: lightgreen;
+    border-radius: 5px;
+    padding-left: 4px;
+}
+
+.leafInfo {
+  margin-bottom: 5px;
+  background-color: lightgreen;
+  border-radius: 5px;
+  padding-left: 4px;
+}

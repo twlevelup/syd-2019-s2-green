@@ -10,6 +10,7 @@ describe('routes', () => {
     expect(routes['product-view']).toBeDefined();
     expect(routes['demo']).toBeDefined();
     expect(routes['medium']).toBeDefined();
+    expect(routes['product-info']).toBeDefined();
   });
 
 });

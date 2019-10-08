@@ -20,6 +20,10 @@ class ProductViewPage extends BasePage {
   bottomButtonEvent() {
     this.navigate('/');
   }
+
+  faceButtonEvent() {
+    this.navigate('product-info');
+  }
 }
 
 module.exports = ProductViewPage;
