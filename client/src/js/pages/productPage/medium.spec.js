@@ -15,16 +15,12 @@ describe('MediumPage', () => {
     });
   });
 
-  // describe(
-  //   'faceButton.event', () => {
-  //     it('goes to medium products list', () => {
-  //       const page = new MediumPage();
-  //       spyOn(page, 'navigate');
-  //       page.faceButtonEvent()
-  //       expect(page.navigate).toHaveBeenCalledWith('medium_products')
-  //     })
-  //   }
-  // )
-
-
+  describe('#navigate', () => {
+    it('should navigate to the productSelectionPage', () => {
+      const page = new MediumPage();
+      spyOn(page, 'navigate');
+      page.faceButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('product-view');
+    });
+  });
 });
