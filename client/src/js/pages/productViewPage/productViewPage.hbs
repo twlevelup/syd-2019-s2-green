@@ -6,17 +6,17 @@
     <div id="right-button" class="buttonRight"></div>
   </div>
   <div id="main-picture" class="main-picture">
-      <img src="{{lunchbox}}" alt="A picture of lunchboxes" />
+      <img src="{{allProductPages.[currPage].itemImg}}" alt="A picture of lunchboxes" />
   </div>
   <div id="shopping-cart" class="shopping-cart-picture">
       <img src="{{shopButton}}" alt="" />
   </div>
   <div class="item-info">
-    <div id="item-name" class="item-name">Lunch Box</div>
-    <div id="item-cost" class="item-cost">$50</div>
+    <div id="item-name" class="item-name">{{allProductPages.[currPage].itemName}}</div>
+    <div id="item-cost" class="item-cost">{{allProductPages.[currPage].itemCost}}</div>
     <br>
     <hr>
-    <div id="item-dimensions">205mm x 110mm</div>
-    <div id="item-misc">100 units, material, weight</div>
+    <div id="item-dimensions">{{allProductPages.[currPage].itemDimensions}}</div>
+    <div id="item-misc">{{allProductPages.[currPage].itemMisc}}</div>
   </div>
 </div>

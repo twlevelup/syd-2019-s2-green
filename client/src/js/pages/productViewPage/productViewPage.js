@@ -8,10 +8,27 @@ class ProductViewPage extends BasePage {
   lunchbox = lunchbox;
   shopButton = shopButton;
 
+  allProductPages = [
+    {
+      itemName: "Lunch Box",
+      itemCost: "$50",
+      itemDimensions: "205mm x 110mm",
+      itemMisc: "100 units, material, weight",
+      itemImg: lunchbox
+    }
+  ];
+  currPage = 0;
+
   rightButtonEvent() {
+    if (currPage < this.allProductPages.length()) {
+      currPage++;
+    }
   }
 
   leftButtonEvent() {
+    if (currPage >= 0) {
+      currPage--;
+    }
   }
 
   topButtonEvent() {
