@@ -7,6 +7,14 @@ class MediumPage extends BasePage {
       this.navigate('product-view');
   }
 
+  rightButtonEvent() {
+    this.navigate('industrial');
+  }
+
+  leftButtonEvent() {
+    this.navigate('small');
+  }
+
 }
 
 module.exports = MediumPage;
