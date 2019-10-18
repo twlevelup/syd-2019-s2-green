@@ -1,7 +1,6 @@
-const MediumPage = require('./medium');
+const ViewAllPage = require('./viewAll');
 
-
-describe('MediumPage', () => {
+describe('ViewAllPage', () => {
   let watchFace;
   beforeEach(() => {
     document.body.innerHTML = `<div id='watch-face' style='height: 100px; width: 100px;'></div>`;
@@ -10,14 +9,14 @@ describe('MediumPage', () => {
 
   describe('#render', () => {
     it('should render the size selection page menu', () => {
-      const page = new MediumPage();
-      expect(page.render()).toContain("MEDIUM");
+      const page = new ViewAllPage();
+      expect(page.render()).toContain("ViewAll");
     });
   });
 
   describe('#navigate', () => {
     it('should navigate to the productSelectionPage', () => {
-      const page = new MediumPage();
+      const page = new ViewAllPage();
       spyOn(page, 'navigate');
       page.faceButtonEvent();
       expect(page.navigate).toHaveBeenCalledWith('product-view');
