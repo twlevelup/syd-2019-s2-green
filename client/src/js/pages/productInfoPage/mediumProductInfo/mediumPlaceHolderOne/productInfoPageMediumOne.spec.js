@@ -18,4 +18,15 @@ describe('ProductInfoPage', () => {
       expect(page.navigate).toHaveBeenCalledWith('/');
     });
   })
+
+    describe('#faceButtonEvent', () => {
+    it ('go to product confirm page', () => {
+      const page = new ProductInfoPage();
+      spyOn(page, 'navigate');
+
+      page.faceButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('product-confirm');
+    });
+  });
+
 });

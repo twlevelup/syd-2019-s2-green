@@ -6,6 +6,10 @@ class ProductInfoPage extends BasePage {
   bottomButtonEvent() {
     this.navigate("/");
   }
+
+  faceButtonEvent(){
+    this.navigate('product-confirm');
+  }
 }
 
 module.exports = ProductInfoPage;

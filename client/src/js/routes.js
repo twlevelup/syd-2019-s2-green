@@ -10,7 +10,7 @@ const viewAll = require("./pages/productPage/productViewAllSelectionPage/viewAll
 // const mediumProducts = require("./pages/Product/")
 const Demo = require('./pages/demoPage/demoPage');
 const ProductInfoPage = require('./pages/productInfoPage/mediumProductInfo/mediumPlaceHolderOne/productInfoPageMediumOne');
-
+const ProductConfirmPage = require('./pages/productConfirmPage/productConfirmPage');
 module.exports = {
   '/': HomePage,
   'contacts': ContactsPage,
@@ -24,4 +24,5 @@ module.exports = {
   // "medium_products": mediumProducts,
   'demo': Demo,
   'product-info-medium-one': ProductInfoPage,
+  'product-confirm': ProductConfirmPage
 };
