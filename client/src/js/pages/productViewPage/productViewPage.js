@@ -20,15 +20,15 @@ class ProductViewPage extends BasePage {
       },
       {
         itemName: "Dinner for 2 Box",
-        itemCost: "$50",
-        itemDimensions: "205mm x 110mm",
+        itemCost: "$40",
+        itemDimensions: "300mm x 200mm",
         itemMisc: "100 units, material, weight",
         itemImg: lunchbox
       },
       {
         itemName: "Halal Snack Pack",
-        itemCost: "$50",
-        itemDimensions: "205mm x 110mm",
+        itemCost: "$60",
+        itemDimensions: "300mm x 190mm",
         itemMisc: "100 units, material, weight",
         itemImg: lunchbox
       },
