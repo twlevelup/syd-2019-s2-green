@@ -1,7 +1,7 @@
 const BasePage = require('watch-framework').BasePage;
 const StorageHub = require('watch-framework').StorageHub;
 const AudioHub = require('watch-framework').AudioHub;
-const logo = require('../../../images/logo.png');
+const logo = require('../../../images/home_logo_1.png');
 const plop = './sounds/plop.mp3';
 
 //test for raspberrypi
@@ -14,7 +14,7 @@ class HomePage extends BasePage {
       { name: 'Sinan', phoneNumber: '0431 222 222' },
       { name: 'Jafari', phoneNumber: '0431 333 333' },
     ])
-
+    document.querySelector("#watch").style.backgroundColor = "#9fdd0f";
     this.updateTimeEverySecond();
     const dateTime = this.getDateTime();
     this.date = dateTime.date;
@@ -54,6 +54,7 @@ class HomePage extends BasePage {
   }
 
   faceButtonEvent() {
+    document.querySelector("#watch").style.backgroundColor = "#FFFFFF";
     this.navigate('medium');
   }
 }
