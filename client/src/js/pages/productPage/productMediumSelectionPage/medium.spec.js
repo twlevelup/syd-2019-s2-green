@@ -41,4 +41,13 @@ describe('MediumPage', () => {
       expect(page.navigate).toHaveBeenCalledWith('small');
     });
   });
+
+  describe('#navigate', () => {
+    it('should navigate to the home page', () => {
+      const page = new MediumPage();
+      spyOn(page, 'navigate');
+      page.bottomButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('/');
+    });
+  });
 });

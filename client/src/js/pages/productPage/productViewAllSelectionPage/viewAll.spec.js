@@ -22,4 +22,13 @@ describe('ViewAllPage', () => {
       expect(page.navigate).toHaveBeenCalledWith('product-view');
     });
   });
+
+  describe('#navigate', () => {
+    it('should navigate to the home', () => {
+      const page = new ViewAllPage();
+      spyOn(page, 'navigate');
+      page.bottomButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('/');
+    });
+  });
 });

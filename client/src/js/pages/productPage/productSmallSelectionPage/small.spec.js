@@ -32,4 +32,13 @@ describe('SmallPage', () => {
       expect(page.navigate).toHaveBeenCalledWith('medium');
     });
   });
+
+  describe('#navigate', () => {
+    it('should navigate to the home page', () => {
+      const page = new SmallPage();
+      spyOn(page, 'navigate');
+      page.bottomButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('/');
+    });
+  });
 });

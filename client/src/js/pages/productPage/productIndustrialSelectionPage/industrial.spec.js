@@ -32,4 +32,13 @@ describe('MediumPage', () => {
       expect(page.navigate).toHaveBeenCalledWith('medium');
     });
   });
+
+  describe('#navigate', () => {
+    it('should navigate to the home page', () => {
+      const page = new IndustrialPage();
+      spyOn(page, 'navigate');
+      page.bottomButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('/');
+    });
+  });
 });
