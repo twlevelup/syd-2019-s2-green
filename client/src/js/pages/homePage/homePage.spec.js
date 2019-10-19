@@ -25,42 +25,12 @@ describe('HomePage', () => {
     });
   });
 
-  describe('#leftButtonEvent', () => {
-    it('goes to 404 page', () => {
-      const page = new HomePage();
-      spyOn(page, 'navigate');
-
-      page.leftButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('404');
-    });
-  });
-
-  describe('#rightButtonEvent', () => {
-    it('goes to product page', () => {
-      const page = new HomePage();
-      spyOn(page, 'navigate');
-
-      page.rightButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('product');
-    });
-  });
-
-  describe('#bottomButtonEvent', () => {
-    it('goes to product-view page', () => {
-      const page = new HomePage();
-      spyOn(page, 'navigate');
-
-      page.bottomButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('product-view');
-    });
-  });
-
-  describe('#topButtonEvent', () => {
+  describe('#faceButtonEvent', () => {
     it('goes to size selection', () => {
       const page = new HomePage();
       spyOn(page, 'navigate');
 
-      page.topButtonEvent();
+      page.faceButtonEvent();
       expect(page.navigate).toHaveBeenCalledWith('medium');
     });
   });

@@ -42,19 +42,19 @@ class HomePage extends BasePage {
   }
 
   rightButtonEvent() {
-    this.navigate('product');
   }
 
   leftButtonEvent() {
-    this.navigate('404');
   }
 
   topButtonEvent() {
-    this.navigate('medium');
   }
 
   bottomButtonEvent() {
-    this.navigate('product-view');
+  }
+
+  faceButtonEvent() {
+    this.navigate('medium');
   }
 }
 
