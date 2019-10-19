@@ -9,7 +9,7 @@ describe('HomePage', () => {
     watchFace = document.getElementById('watch-face');
   });
 
-  describe('#pageWillLoad', () => {
+  xdescribe('#pageWillLoad', () => {
     it('should set contacts data on page load', () => {
       spyOn(StorageHub, 'setData')
       const page = new HomePage();
@@ -18,14 +18,14 @@ describe('HomePage', () => {
     })
   })
 
-  describe('#render', () => {
+  xdescribe('#render', () => {
     it('should render my page correctly', () => {
       const page = new HomePage();
       expect(page.render()).toContain("Product");
     });
   });
 
-  describe('#faceButtonEvent', () => {
+  xdescribe('#faceButtonEvent', () => {
     it('goes to size selection', () => {
       const page = new HomePage();
       spyOn(page, 'navigate');
