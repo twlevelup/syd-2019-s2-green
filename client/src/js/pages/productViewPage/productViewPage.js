@@ -1,13 +1,15 @@
 const BasePage = require('watch-framework').BasePage;
 const StorageHub = require('watch-framework').StorageHub;
 const lunchbox = require('../../../images/productViewPictures/lunchbox.png');
-const shopButton= require('../../../images/productViewPictures/shopButton.png');
+const shopButton = require('../../../images/productViewPictures/shopButton.png');
+const outofstockicon = require('../../../images/productViewPictures/outofstockicon.png');
 const ProductViewPageUpdater = require('./productViewPageUpdater');
 
 class ProductViewPage extends BasePage {
   template = require("./productViewPage.hbs");
   lunchbox = lunchbox;
   shopButton = shopButton;
+  outofstockicon = outofstockicon;
 
   pageWillLoad() {
     this.allProductPages = [
