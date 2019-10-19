@@ -19,7 +19,6 @@ module.exports = {
   "medium": medium,
   "small": small,
   "industrial": industrial,
-  "viewAll": viewAll,
   // "medium_products": mediumProducts,
   'demo': Demo,
   'product-info-medium-one': ProductInfoPage,
