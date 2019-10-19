@@ -40,3 +40,14 @@
   padding-left: 4px;
   padding-right: 1px;
 }
+
+.buyButton{
+  color: black;
+  margin-bottom: 3px;
+  background-color: white;
+  border-radius: 3px;
+  padding-left: 2px;
+  padding-right: 4px;
+  text-align: center;
+  transform: translate(95px,10px);
+}
