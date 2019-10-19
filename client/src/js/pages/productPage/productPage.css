@@ -1,0 +1,21 @@
+.productMenu {
+    text-align: center;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+}
+
+.productPageImage {
+    position: relative;
+    transform: translate(0px, 30px);
+}
+
+.productPageTitle {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.productPageDescription {
+  transform: translate(0px, 65px);
+  font-size: 16px;
+}

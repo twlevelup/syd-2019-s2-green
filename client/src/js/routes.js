@@ -6,7 +6,6 @@ const ProductViewPage = require ('./pages/productViewPage/productViewPage');
 const medium = require("./pages/productPage/productMediumSelectionPage/medium");
 const small = require("./pages/productPage/productSmallSelectionPage/small");
 const industrial = require("./pages/productPage/productIndustrialSelectionPage/industrial");
-const viewAll = require("./pages/productPage/productViewAllSelectionPage/viewAll");
 // const mediumProducts = require("./pages/Product/")
 const Demo = require('./pages/demoPage/demoPage');
 const ProductInfoPage = require('./pages/productInfoPage/mediumProductInfo/mediumPlaceHolderOne/productInfoPageMediumOne');

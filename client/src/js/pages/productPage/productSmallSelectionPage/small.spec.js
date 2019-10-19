@@ -8,13 +8,6 @@ describe('SmallPage', () => {
     watchFace = document.getElementById('watch-face');
   });
 
-  describe('#render', () => {
-    it('should render the size selection page menu', () => {
-      const page = new SmallPage();
-      expect(page.render()).toContain("SMALL");
-    });
-  });
-
   describe('#navigate', () => {
     it('should navigate to the productSelectionPage', () => {
       const page = new SmallPage();
@@ -30,6 +23,15 @@ describe('SmallPage', () => {
       spyOn(page, 'navigate');
       page.rightButtonEvent();
       expect(page.navigate).toHaveBeenCalledWith('medium');
+    });
+  });
+
+  describe('#navigate', () => {
+    it('should navigate to the home page', () => {
+      const page = new SmallPage();
+      spyOn(page, 'navigate');
+      page.bottomButtonEvent();
+      expect(page.navigate).toHaveBeenCalledWith('/');
     });
   });
 });
