@@ -17,6 +17,9 @@ class SmallPage extends BasePage {
   bottomButtonEvent() {
     this.navigate('/');
   }
+  topButtonEvent() {
+    this.navigate("/");
+  }
 
 }
 

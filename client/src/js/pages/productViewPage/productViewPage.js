@@ -60,6 +60,7 @@ class ProductViewPage extends BasePage {
   }
 
   topButtonEvent() {
+    this.navigate("medium");
   }
 
   bottomButtonEvent() {

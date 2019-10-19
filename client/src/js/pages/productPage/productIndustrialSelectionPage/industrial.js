@@ -18,6 +18,9 @@ class IndustrialPage extends BasePage {
   bottomButtonEvent() {
     this.navigate('/');
   }
+  topButtonEvent() {
+    this.navigate("/");
+  }
 }
 
 module.exports = IndustrialPage;

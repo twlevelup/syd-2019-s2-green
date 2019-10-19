@@ -1,6 +1,7 @@
 #confirmPageContainer {
     text-align: center;
     padding-left: 2em !important;
+    transform: translate(-18px,10px);
 }
 
 .confirmMessage{
