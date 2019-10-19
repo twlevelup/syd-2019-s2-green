@@ -8,13 +8,6 @@ describe('SmallPage', () => {
     watchFace = document.getElementById('watch-face');
   });
 
-  describe('#render', () => {
-    it('should render the size selection page menu', () => {
-      const page = new SmallPage();
-      expect(page.render()).toContain("SMALL");
-    });
-  });
-
   describe('#navigate', () => {
     it('should navigate to the productSelectionPage', () => {
       const page = new SmallPage();

@@ -1,5 +1,5 @@
 const BasePage = require('watch-framework').BasePage;
-const smallLogo = require('../../../../images/viewProductTypePictures/small_product_icon.png');
+const smallLogo = require('../../../../images/viewProductTypePictures_product_icon.png');
 
 class SmallPage extends BasePage {
   template = require('./small.hbs');
