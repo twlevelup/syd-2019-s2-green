@@ -12,7 +12,6 @@ describe('routes', () => {
     expect(routes['medium']).toBeDefined();
     expect(routes['small']).toBeDefined();
     expect(routes['industrial']).toBeDefined();
-    expect(routes['viewAll']).toBeDefined();
     expect(routes['product-info-medium-one']).toBeDefined();
   });
 
